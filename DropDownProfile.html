@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Drop-Down Profile Menu -</title>
+    <link rel="stylesheet" href="dropDown.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Coding Solo</h2>
+            <ul>
+                <li> <a href="#"> Home </a></li>
+                <li> <a href="#"> Features </a></li>
+                <li> <a href="#"> About </a></li>
+                <li> <a href="#"> Contact </a></li>
+            </ul>
+            <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/poy5bdbgjnk79idvw9hj" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/poy5bdbgjnk79idvw9hj">
+                        <h3> Solo</h3>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/poy5bdbgjnk79idvw9hj">
+                        <p>Edit Profile</p>
+                        <span> > </span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/poy5bdbgjnk79idvw9hj">
+                        <p>Settings and Privacy</p>
+                        <span> > </span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/poy5bdbgjnk79idvw9hj">
+                        <p>Help & Support</p>
+                        <span> > </span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco,dpr_1/poy5bdbgjnk79idvw9hj">
+                        <p>Logout</p>
+                        <span> > </span>
+                    </a>
+
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+    
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+</body>
+</html>
